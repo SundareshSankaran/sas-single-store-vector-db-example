@@ -18,7 +18,7 @@ Demo Single Store's capabilities as a vector database interacting with SAS, back
    1. Make a copy of [dotenv_template](dotenv_template.sas) as dotenv.sas in your local/ working area
    2. Fill in dotenv.sas with your environment-specific variables and run first. The macro variables in dotenv.sas will be used in the example programs.
    3. As the above includes authentication information for your Single Store repo, do not save dotenv.sas with this repo. dotenv.sas has been added to the [.gitignore](./.gitignore) file.
-2. Run [Single_Store_Vector_Capabilities.sas](./code/Single_Store_Vector_Capabilities.sas) for a basic demo.  If you're running this on viya4-stable, lines 107 - 120 of the program makes use of a table resident within that environment.  For other environments, you are free to modify the code to use another dataset or include the data referred. An [example](./code/Create_Test_Dataset.sas) is provided to help you with the same.
+2. Run [Single_Store_Vector_Capabilities.sas](./code/Single_Store_Vector_Capabilities.sas) for a basic demo.  Lines 107 - 120 of the program makes use of a table resident within that environment.  For other environments, you are free to modify the code to use another dataset or include the data referred. An [example](./code/Create_Test_Dataset.sas) is provided to help you with the same.
 
 ## Data used in this repo
 Purely for purposes of example, this uses data from a Hugging Face repository which contains 1M articles from dbpedia with a title, abstract (text), and an OpenAI embedding of the abstract. The data is located [here](https://huggingface.co/datasets/KShivendu/dbpedia-entities-openai-1M). Refer to the Hugging Face repo frequently to check for changes to data usage terms or license.
